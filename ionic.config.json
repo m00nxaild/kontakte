@@ -1,0 +1,8 @@
+{
+  "name": "kontakte",
+  "integrations": {
+    "cordova": {}
+  },
+  "type": "ionic-angular",
+  "pro_id": "a375b080"
+}
