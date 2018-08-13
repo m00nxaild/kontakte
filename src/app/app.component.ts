@@ -4,14 +4,6 @@ import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
 
 import { HomePage } from '../pages/home/home';
-import { LoginPage } from "../pages/login/login";
-import { SettingsPage } from "../pages/settings/settings";
-import { AccountsPage } from "../pages/accounts/accounts";
-import { AccountWhatsappPage } from "../pages/account-whatsapp/account-whatsapp";
-import { AccountLinkedinPage } from "../pages/account-linkedin/account-linkedin";
-import { AccountFacebookPage } from "../pages/account-facebook/account-facebook";
-import { AccountIosPage } from "../pages/account-ios/account-ios";
-import { AccountDroidPage } from "../pages/account-droid/account-droid";
 
 @Component({
   templateUrl: 'app.html'

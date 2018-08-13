@@ -1,3 +1,4 @@
+import { KontakteProvider } from './../../providers/kontakte/kontakte';
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
 
@@ -14,12 +15,18 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
   templateUrl: 'accounts.html',
 })
 export class AccountsPage {
+  public archivedTodos = [];
 
-  constructor(public navCtrl: NavController, public navParams: NavParams) {
+  constructor(
+    public navCtrl: NavController, 
+    public navParams: NavParams,
+    private KontakteProvider: KontakteProvider
+    ) {
   }
 
   ionViewDidLoad() {
-    console.log('ionViewDidLoad AccountsPage');
+    //console.log('ionViewDidLoad AccountsPage');
+    this.archivedTodos = this.KontakteProvider.getArchivedTodos();
   }
 
 }
