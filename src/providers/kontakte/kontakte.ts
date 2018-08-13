@@ -34,4 +34,8 @@ export class KontakteProvider {
     return this.archivedTodos;
   }
 
+  editTodo(todo, todoIndex) {
+    this.todos[todoIndex] = todo;
+  }
+
 }
